@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DevConf 2026 — A conferência de desenvolvimento web que conecta devs do Brasil inteiro." />
+  <title>DevConf 2026 — Conferência de Dev Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo-bracket">&lt;</span>DevConf<span class="logo-accent">/&gt;</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#palestrantes">Palestrantes</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#inscricao" class="btn-nav">Inscrever-se</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge">15-17 de outubro · 2026 · São Paulo</span>
+        <h1>A conferência onde o <span class="highlight">código encontra a comunidade</span></h1>
+        <p class="hero-sub">
+          Três dias de palestras, workshops e networking com os melhores devs do Brasil.
+          Frontend, backend, DevOps, IA — tudo num só lugar.
+        </p>
+        <div class="hero-cta">
+          <a href="#inscricao" class="btn btn-primary">Garantir minha vaga</a>
+          <a href="#agenda" class="btn btn-secondary">Ver agenda →</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>40+</strong><span>palestrantes</span></div>
+          <div><strong>1.200</strong><span>devs esperados</span></div>
+          <div><strong>3</strong><span>dias intensos</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-title">terminal</span>
+          </div>
+          <pre class="code-body"><span class="c-comment"># Deploy em segundos</span>
+<span class="c-prompt">$</span> git push origin main
+<span class="c-muted">Counting objects: 12, done.</span>
+<span class="c-muted">Compressing objects: 100%</span>
+<span class="c-success">✓ Build succeeded</span>
+<span class="c-success">✓ Deploy live</span>
+
+<span class="c-prompt">$</span> open https://devconf.com.br
+<span class="c-accent">🚀 Pronto!</span></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <span class="section-eyebrow">Sobre o evento</span>
+      <h2>Feito por devs, para devs</h2>
+      <p class="section-lead">
+        A DevConf nasceu pra ser diferente: sem palco corporativo, sem talk patrocinada, sem encheção.
+        Só conteúdo técnico de verdade, espaço para trocar ideia e tempo pra colocar a mão no código.
+      </p>
+
+      <div class="features">
+        <article class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3>Tech talks</h3>
+          <p>Talks de 30 minutos focadas em problemas reais, com cases de empresas brasileiras.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">🛠️</div>
+          <h3>Workshops</h3>
+          <p>Sessões hands-on de 2h em grupos pequenos para você sair sabendo aplicar.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">🤝</div>
+          <h3>Networking</h3>
+          <p>Hallway track, after-parties e mentorias 1:1 com seniors do mercado.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">🎯</div>
+          <h3>Hackathon</h3>
+          <p>24h de hackathon no terceiro dia, com prêmios e recrutadores acompanhando.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PALESTRANTES -->
+  <section class="section section-alt" id="palestrantes">
+    <div class="container">
+      <span class="section-eyebrow">Quem vai falar</span>
+      <h2>Palestrantes confirmados</h2>
+      <p class="section-lead">Profissionais que constroem produtos usados por milhões de pessoas.</p>
+
+      <div class="speakers">
+        <article class="speaker">
+          <div class="avatar avatar-1">AL</div>
+          <h3>Ana Lima</h3>
+          <span class="role">Staff Engineer · Nubank</span>
+          <p>Sistemas distribuídos em escala bilionária.</p>
+        </article>
+        <article class="speaker">
+          <div class="avatar avatar-2">BR</div>
+          <h3>Bruno Rocha</h3>
+          <span class="role">Tech Lead · iFood</span>
+          <p>Edge computing para apps de delivery.</p>
+        </article>
+        <article class="speaker">
+          <div class="avatar avatar-3">CS</div>
+          <h3>Camila Souza</h3>
+          <span class="role">Principal · Stone</span>
+          <p>De monolito a microsserviços sem perder dinheiro.</p>
+        </article>
+        <article class="speaker">
+          <div class="avatar avatar-4">DF</div>
+          <h3>Daniel Ferreira</h3>
+          <span class="role">DX Engineer · Vercel</span>
+          <p>O futuro do desenvolvimento frontend.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDA -->
+  <section class="section" id="agenda">
+    <div class="container">
+      <span class="section-eyebrow">Programação</span>
+      <h2>O que vai rolar</h2>
+
+      <div class="agenda">
+        <div class="day">
+          <h3>Dia 1 · 15/out</h3>
+          <span class="day-tag">Frontend & UX</span>
+          <ul>
+            <li>Keynote de abertura</li>
+            <li>5 talks de frontend moderno</li>
+            <li>Workshop de Design Systems</li>
+          </ul>
+        </div>
+        <div class="day">
+          <h3>Dia 2 · 16/out</h3>
+          <span class="day-tag">Backend & Cloud</span>
+          <ul>
+            <li>Arquiteturas escaláveis</li>
+            <li>Deploy contínuo na prática</li>
+            <li>Workshop de Kubernetes</li>
+          </ul>
+        </div>
+        <div class="day">
+          <h3>Dia 3 · 17/out</h3>
+          <span class="day-tag">IA & Hackathon</span>
+          <ul>
+            <li>Talks sobre LLMs em produção</li>
+            <li>Hackathon de 24h</li>
+            <li>Premiação e encerramento</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE INSCRIÇÃO -->
+  <section class="section section-cta" id="inscricao">
+    <div class="container">
+      <div class="form-grid">
+        <div class="form-info">
+          <span class="section-eyebrow light">Vagas limitadas</span>
+          <h2>Pronto pra fazer parte?</h2>
+          <p>
+            Preencha o formulário e receba prioridade na compra dos ingressos com desconto de
+            lançamento. Sem spam — só o necessário.
+          </p>
+          <ul class="benefits">
+            <li>✓ Desconto exclusivo de pré-venda</li>
+            <li>✓ Acesso à comunidade no Discord</li>
+            <li>✓ Novidades sobre palestrantes</li>
+          </ul>
+        </div>
+
+        <!--
+          Formulário com Netlify Forms.
+          - data-netlify="true" ativa a captura.
+          - O input hidden "form-name" é necessário.
+          - O honeypot "bot-field" reduz spam.
+        -->
+        <form
+          class="form"
+          name="inscricao"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          onsubmit="return validarFormulario(event)"
+        >
+          <input type="hidden" name="form-name" value="inscricao" />
+          <p class="hidden">
+            <label>Não preencha: <input name="bot-field" /></label>
+          </p>
+
+          <div class="field">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required placeholder="Ex.: Maria da Silva" />
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="voce@exemplo.com" />
+          </div>
+
+          <div class="field">
+            <label for="cargo">Cargo / Área</label>
+            <select id="cargo" name="cargo" required>
+              <option value="">Selecione...</option>
+              <option>Frontend</option>
+              <option>Backend</option>
+              <option>Fullstack</option>
+              <option>Mobile</option>
+              <option>DevOps / SRE</option>
+              <option>Dados / IA</option>
+              <option>Outro</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Por que você quer participar? <span class="optional">(opcional)</span></label>
+            <textarea id="mensagem" name="mensagem" rows="3" placeholder="Conta pra gente..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Quero garantir minha vaga</button>
+
+          <p class="form-foot" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="logo">
+          <span class="logo-bracket">&lt;</span>DevConf<span class="logo-accent">/&gt;</span>
+        </p>
+        <p class="footer-muted">A conferência onde devs do Brasil inteiro se encontram.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>contato@devconf.com.br</p>
+        <p>São Paulo · SP</p>
+      </div>
+      <div>
+        <h4>Siga-nos</h4>
+        <p><a href="#">Twitter / X</a></p>
+        <p><a href="#">LinkedIn</a></p>
+        <p><a href="#">GitHub</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 DevConf. Feito com ☕ e muito código. Hospedado no Netlify.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
