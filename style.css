@@ -1,4 +1,3 @@
-/* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -16,7 +15,6 @@ a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 button { font-family: inherit; cursor: pointer; border: none; }
 
-/* ===== TOKENS ===== */
 :root {
   --primary: #0d9488;
   --primary-dark: #0f766e;
@@ -78,7 +76,6 @@ button { font-family: inherit; cursor: pointer; border: none; }
 }
 .btn-nav:hover { background: var(--primary-dark) !important; color: white !important; }
 
-/* ===== HERO ===== */
 .hero {
   padding: 80px 0 100px;
   background:
@@ -138,7 +135,6 @@ button { font-family: inherit; cursor: pointer; border: none; }
 }
 .hero-stats span { color: var(--muted); font-size: 13px; }
 
-/* Code window */
 .code-window {
   background: var(--dark);
   border-radius: var(--radius);
@@ -179,7 +175,6 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .c-success { color: #4ade80; }
 .c-accent { color: var(--primary-light); }
 
-/* ===== BUTTONS ===== */
 .btn {
   display: inline-block;
   padding: 14px 28px;
@@ -206,7 +201,6 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .btn-secondary:hover { border-color: var(--primary); color: var(--primary); }
 .btn-full { width: 100%; }
 
-/* ===== SECTIONS ===== */
 .section { padding: 100px 0; }
 .section-alt { background: var(--bg-soft); }
 .section-eyebrow {
@@ -233,7 +227,6 @@ button { font-family: inherit; cursor: pointer; border: none; }
   margin-bottom: 56px;
 }
 
-/* ===== FEATURES ===== */
 .features {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -255,7 +248,7 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .feature h3 { font-size: 18px; margin-bottom: 8px; }
 .feature p { color: var(--muted); font-size: 14px; }
 
-/* ===== SPEAKERS ===== */
+
 .speakers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -295,7 +288,6 @@ button { font-family: inherit; cursor: pointer; border: none; }
 }
 .speaker p { font-size: 14px; color: var(--muted); }
 
-/* ===== AGENDA ===== */
 .agenda {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -327,7 +319,6 @@ button { font-family: inherit; cursor: pointer; border: none; }
 }
 .day ul li:last-child { border-bottom: none; }
 
-/* ===== FORM SECTION ===== */
 .section-cta {
   background: var(--dark);
   color: white;
@@ -393,7 +384,6 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .form-foot.success { color: #059669; font-weight: 600; }
 .form-foot.error { color: #dc2626; font-weight: 600; }
 
-/* ===== FOOTER ===== */
 .footer {
   background: var(--dark-soft);
   color: #cbd5e1;
@@ -423,7 +413,6 @@ button { font-family: inherit; cursor: pointer; border: none; }
   color: #94a3b8;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .hero-grid,
   .form-grid { grid-template-columns: 1fr; gap: 40px; }

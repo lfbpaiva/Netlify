@@ -1,11 +1,3 @@
-/**
- * DevConf 2026 — script principal
- * - Validação leve do formulário
- * - Smooth scroll já vem do CSS (html { scroll-behavior: smooth })
- * - Mensagem de sucesso quando volta da URL com ?success=true
- */
-
-// Mostrar mensagem de sucesso ao voltar do Netlify Forms
 (function checarSucesso() {
   const params = new URLSearchParams(window.location.search);
   if (params.get('success') === 'true') {
@@ -14,18 +6,12 @@
       status.textContent = '✓ Inscrição enviada com sucesso! Nos vemos em outubro.';
       status.className = 'form-foot success';
     }
-    // Rola até o formulário
     setTimeout(() => {
       document.getElementById('inscricao')?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   }
 })();
 
-/**
- * Validação no submit.
- * IMPORTANTE: retornamos true para o submit seguir e o Netlify capturar.
- * Se você quisesse interceptar e enviar via fetch, alteraria essa função.
- */
 function validarFormulario(event) {
   const form = event.target;
   const nome = form.nome.value.trim();
@@ -33,7 +19,6 @@ function validarFormulario(event) {
   const cargo = form.cargo.value;
   const status = document.getElementById('form-status');
 
-  // Validação simples de e-mail
   const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (nome.length < 3) {
@@ -55,13 +40,12 @@ function validarFormulario(event) {
     return false;
   }
 
-  // Tudo certo, deixa seguir o submit para o Netlify Forms processar
   status.textContent = 'Enviando...';
   status.className = 'form-foot';
   return true;
 }
 
-// Destacar link da navegação ativo conforme rola a página
+
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 
